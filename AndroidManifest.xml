@@ -11,11 +11,22 @@
       android:icon="@drawable/ic_launcher">
     <activity
         android:name="MainActivity"
-        android:label="@string/app_name">
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light">
       <intent-filter>
         <action android:name="android.intent.action.MAIN"/>
         <category android:name="android.intent.category.LAUNCHER"/>
       </intent-filter>
+    </activity>
+    <activity
+        android:name=".swipe_to_dismiss.SwipeToDismissTextViewsActivity"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light">
+    </activity>
+    <activity
+        android:name=".swipe_to_dismiss.SwipeToDismissListViewItemsActivity"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light">
     </activity>
   </application>
 </manifest>
