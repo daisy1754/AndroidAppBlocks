@@ -28,5 +28,10 @@
         android:label="@string/app_name"
         android:theme="@android:style/Theme.Light">
     </activity>
+    <activity
+        android:name=".bordered_view.BorderdViewActivity"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light">
+    </activity>
   </application>
 </manifest>

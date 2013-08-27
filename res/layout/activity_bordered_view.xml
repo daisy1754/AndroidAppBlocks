@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/bordered_view_activity_parent"
+              android:padding="5dp"
+              android:gravity="center_horizontal">
+
+  <TableLayout
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:stretchColumns="1"
+      android:paddingTop="10dp"
+      android:paddingBottom="10dp">
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Border width (px)"/>
+
+      <EditText
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:text="1"
+          android:id="@+id/border_width_px"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Border color (RGB)"/>
+
+      <EditText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="#000000"
+          android:id="@+id/border_color_rgb"/>
+    </TableRow>
+
+  </TableLayout>
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="The Android robot is created and shared by Google and used  used according to terms described in the Creative Commons 3.0 Attribution License."
+      />
+
+</LinearLayout>

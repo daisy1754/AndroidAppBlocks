@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import jp.gr.java_conf.daisy.android_blocks.bordered_view.BorderdViewActivity;
 import jp.gr.java_conf.daisy.android_blocks.swipe_to_dismiss.SwipeToDismissListViewItemsActivity;
 import jp.gr.java_conf.daisy.android_blocks.swipe_to_dismiss.SwipeToDismissTextViewsActivity;
 
@@ -21,6 +22,8 @@ public class MainActivity extends Activity {
                 .setOnClickListener(new ClickToJumpListener(SwipeToDismissTextViewsActivity.class));
         ((Button) findViewById(R.id.link_swipe_to_dismiss_list_item))
                 .setOnClickListener(new ClickToJumpListener(SwipeToDismissListViewItemsActivity.class));
+        ((Button) findViewById(R.id.link_bordered_view))
+                .setOnClickListener(new ClickToJumpListener(BorderdViewActivity.class));
     }
 
     private class ClickToJumpListener implements View.OnClickListener {
