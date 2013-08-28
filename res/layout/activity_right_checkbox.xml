@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+  <jp.gr.java_conf.daisy.android_blocks.right_checkbox.RightCheckbox
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="#ccccff"
+      android:text="Text (Set by XML)" />
+  <jp.gr.java_conf.daisy.android_blocks.right_checkbox.RightCheckbox
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/activity_right_checkbox_no_text"
+      android:background="#ccffcc"
+      android:checked="true" />
+</LinearLayout>

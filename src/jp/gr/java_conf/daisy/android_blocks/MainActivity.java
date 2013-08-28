@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import jp.gr.java_conf.daisy.android_blocks.bordered_view.BorderdViewActivity;
+import jp.gr.java_conf.daisy.android_blocks.right_checkbox.RightCheckboxActivity;
 import jp.gr.java_conf.daisy.android_blocks.swipe_to_dismiss.SwipeToDismissListViewItemsActivity;
 import jp.gr.java_conf.daisy.android_blocks.swipe_to_dismiss.SwipeToDismissTextViewsActivity;
 
@@ -24,6 +25,8 @@ public class MainActivity extends Activity {
                 .setOnClickListener(new ClickToJumpListener(SwipeToDismissListViewItemsActivity.class));
         ((Button) findViewById(R.id.link_bordered_view))
                 .setOnClickListener(new ClickToJumpListener(BorderdViewActivity.class));
+        ((Button) findViewById(R.id.link_right_checkbox))
+                .setOnClickListener(new ClickToJumpListener(RightCheckboxActivity.class));
     }
 
     private class ClickToJumpListener implements View.OnClickListener {

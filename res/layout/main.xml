@@ -19,5 +19,10 @@
       android:layout_height="wrap_content"
       android:text="Bordered View"
       android:id="@+id/link_bordered_view"/>
+  <Button
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Right-side checkbox"
+      android:id="@+id/link_right_checkbox"/>
 </LinearLayout>
 
