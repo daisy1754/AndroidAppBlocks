@@ -42,7 +42,9 @@ public class SwipeToDismissListViewItemsActivity extends Activity {
                 new SwipeToDismissTouchListener.SwipeAndDismissEventListenerAdapter() {
                     @Override
                     public void onSwipeEndAnimationEnd(View view, boolean removed) {
-                        remove(getItem(listView.getPositionForView(view)));
+                        if (removed) {
+                            remove(getItem(listView.getPositionForView(view)));
+                        }
                     }
                 });
 
