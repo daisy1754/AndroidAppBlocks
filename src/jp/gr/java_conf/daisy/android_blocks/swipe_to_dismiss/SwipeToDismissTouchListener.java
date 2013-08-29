@@ -125,15 +125,13 @@ public class SwipeToDismissTouchListener implements View.OnTouchListener {
         float deltaXAbs = Math.abs(x - downX);
         float fractionCovered;
         float endX;
-        final boolean remove;
-        if (deltaXAbs / view.getWidth() > DELTA_TO_DISMISS_THRESHOLD) {
+        final boolean remove = deltaXAbs / view.getWidth() > DELTA_TO_DISMISS_THRESHOLD;
+        if (remove) {
             fractionCovered = deltaXAbs / view.getWidth();
             endX = x < downX ? -view.getWidth() : view.getWidth();
-            remove = true;
         } else {
             fractionCovered = 1 - (deltaXAbs / view.getWidth());
             endX = 0;
-            remove = false;
         }
         long duration = (int) ((1 - fractionCovered) * SWIPE_DURATION_MSEC);
         Animator animator = ObjectAnimator.ofPropertyValuesHolder(view,
@@ -148,6 +146,7 @@ public class SwipeToDismissTouchListener implements View.OnTouchListener {
                 swipeAndDismissEventListener.onSwipeEndAnimationEnd(view, remove);
             }
         });
+        animator.start();
         swipeAndDismissEventListener.onSwipeEndAnimationStarted(view);
     }
 
